@@ -28,7 +28,7 @@ def make_signal(
     mean=0.5,
     use_noise=True,          # <-- toggle noise on/off
     fs=1000.0,
-    cutoff_hz=5.0,
+    cutoff_hz=10.0,
     seed=42
 ):
     # Ramp from 0 to mean
@@ -56,9 +56,36 @@ def make_signal(
 
     return np.concatenate([ramp, tail])
 
-# ---- Example usage ----
-signal_with_noise = make_signal(use_noise=True, mean=0.5, cutoff_hz=10.0)
-signal_no_noise   = make_signal(use_noise=False, mean=0.5)
+# ---- Generate CSV's ----
 
-np.savetxt("signal_with_noise.csv", signal_with_noise, delimiter=",")
+N_TOTAL = 1000
+N_RAMP  = 250
+MEAN    = 0.5
+FS      = 1000.0
+
+cutoff_frequencies = [10, 50, 100, 200,500]  # Hz
+
+ramp = np.linspace(0.0, MEAN, N_RAMP)
+
+for fc in cutoff_frequencies:
+    signal = make_signal(use_noise=True, mean=0.5, cutoff_hz=100.0)
+    filename = f"signal_lp_{fc:.1f}Hz.csv"
+    np.savetxt(filename, signal, delimiter=",")
+    print(f"Saved {filename}")
+
+signal_no_noise   = make_signal(use_noise=False, mean=0.5)
 np.savetxt("signal_no_noise.csv", signal_no_noise, delimiter=",")
+
+import matplotlib.pyplot as plt
+
+# Time / sample index
+t = np.arange(len(signal_no_noise))
+plt.figure(figsize=(10, 4))
+plt.plot(t, signal_with_noise, label="With noise", linewidth=1)
+plt.plot(t, signal_no_noise, label="No noise", linewidth=2)
+plt.xlabel("Sample index")
+plt.ylabel("Signal value")
+plt.ylim(0, 1)
+plt.legend()
+plt.tight_layout()
+plt.show()
