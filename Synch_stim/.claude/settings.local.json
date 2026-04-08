@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /c/Users/brouw/Documents/PhD/Projects/Thalamic_Synchrony/TRN_Stimulation/Code/Synch_stim/*.csv)",
+      "Bash(grep -E \"\\\\.\\(txt|md|json|yaml|yml|cfg|conf\\)$\")",
+      "Bash(python3:*)",
+      "Bash(sed -n '995,1000p' /c/Users/brouw/Documents/PhD/Projects/Thalamic_Synchrony/TRN_Stimulation/Code/Synch_stim/signal_no_noise.csv)",
+      "Bash(sed -n '995,1000p' /c/Users/brouw/Documents/PhD/Projects/Thalamic_Synchrony/TRN_Stimulation/Code/Synch_stim/signal_with_noise.csv)",
+      "Bash(python generate_stimuli.py)",
+      "Bash(where python3:*)",
+      "Bash(where py:*)",
+      "Read(//c/Users/brouw/anaconda3/**)",
+      "Read(//c/Users/brouw/miniconda3/**)",
+      "Read(//c/ProgramData/anaconda3/**)",
+      "Bash(conda info:*)",
+      "Bash(pip --version)",
+      "Bash(/c/Users/brouw/anaconda3/python.exe generate_stimuli.py)",
+      "Bash(conda activate:*)",
+      "Bash(/c/Users/brouw/anaconda3/Scripts/conda.exe info:*)",
+      "Bash(/c/Users/brouw/anaconda3/envs/thalamic_synchrony/python.exe generate_stimuli.py)",
+      "Bash(/c/Users/brouw/anaconda3/envs/PAND_2025/python.exe -c \"import numpy; import scipy; import matplotlib; print\\(''OK''\\)\")",
+      "Bash(/c/Users/brouw/anaconda3/envs/DEEPLABCUT/python.exe -c \"import numpy; import scipy; import matplotlib; print\\(''OK''\\)\")",
+      "Bash(/c/Users/brouw/anaconda3/envs/PAND_2025/python.exe generate_stimuli.py)"
+    ]
+  }
+}
