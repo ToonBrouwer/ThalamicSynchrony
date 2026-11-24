@@ -1,0 +1,14 @@
+session,subject,date,target_region,sex,date_of_birth,genotype,strain,raw_folder,job_folder,camera_video,shanks_usable,adc_command,adc_gate,adc_message,adc_camera,adc_treadmill,adc_direction
+E29_session1,E29,2026-08-12,thalamus,?,?,VGAT-ChR2,?,E292026-08-12_14-41-43PeriscopeTest_session1,E292026-08-12_14-41-43PeriscopeTest_session1_20261007_081139_job210,E29_PeriscopeTest_Session1,1,9,10,3,11,4,0
+E29_session2,E29,2026-08-13,thalamus,?,?,VGAT-ChR2,?,E292026-08-13_13-50-09PeriscopeTest_session2,E292026-08-13_13-50-09PeriscopeTest_session2_20261007_110821_job211,E29_PeriscopeTest_Session2,1 2 3 4,9,10,3,11,4,0
+E29_session3,E29,2026-08-14,thalamus,?,?,VGAT-ChR2,?,E292026-08-14_14-17-54PeriscopeTest_session3,E292026-08-14_14-17-54PeriscopeTest_session3_20261007_124140_job212,E29_PeriscopeTest3,1 2 3 4,9,10,3,11,4,0
+E30_session1,E30,2026-08-12,thalamus,?,?,VGAT-ChR2,?,E302026-08-12_16-40-21PeriscopeTest_session1,E302026-08-12_16-40-21PeriscopeTest_session1_20261008_084404_job213,E30_PeriscopeTest_Session1,1,9,10,3,11,4,0
+E30_session2,E30,2026-08-13,thalamus,?,?,VGAT-ChR2,?,E302026-08-13_17-37-53PeriscopeTest_session2,E302026-08-13_17-37-53PeriscopeTest_session2_20261008_084532_job214,E30_PeriscopeTest_Session2,1 2 3 4,9,10,3,11,4,0
+E30_session3,E30,2026-08-14,thalamus,?,?,VGAT-ChR2,?,E302026-08-14_15-51-07PeriscopeTest_session3,E302026-08-14_15-51-07PeriscopeTest_session3_20261008_155354_job215,E30_PeriscopeTest3,1 2 3 4,9,10,3,11,4,0
+E31_session1,E31,2026-08-04,thalamus,?,?,VGAT-ChR2,?,E312026-08-04_15-04-51PeriscopeTest_session1,E312026-08-04_15-04-51PeriscopeTest_session1_20261006_143922_job207,,1 2 3 4,9,10,3,11,4,0
+E31_session2,E31,2026-08-05,thalamus,?,?,VGAT-ChR2,?,E312026-08-05_14-52-40PeriscopeTest_session2,E312026-08-05_14-52-40PeriscopeTest_session2_20261006_075638_job204,E31_Periscope_session2,1 2,9,10,3,11,4,0
+E31_session3,E31,2026-08-06,thalamus,?,?,VGAT-ChR2,?,E312026-08-06_16-38-09PeriscopeTest_session3,E312026-08-06_16-38-09PeriscopeTest_session3_20261005_113136_job202,E31_Periscope_session32,1 2 3 4,9,10,3,11,4,0
+E32_session1,E32,2026-08-04,thalamus,?,?,VGAT-ChR2,?,E322026-08-04_17-54-17PeriscopeTest_session1,E322026-08-04_17-54-17PeriscopeTest_session1_20261006_143822_job206,E32_Periscope_Session1,1 2 3 4,9,10,3,11,4,0
+E32_session2Fixed,E32,2026-08-06,thalamus,?,?,VGAT-ChR2,?,E322026-08-06_14-53-14PeriscopeTest_session2Fixed,E322026-08-06_14-53-14PeriscopeTest_session2Fixed_20261006_080220_job205,E32_Periscope_session2fixed,1 2 3 4,9,10,3,11,4,0
+E32_session3,E32,2026-08-07,thalamus,?,?,VGAT-ChR2,?,E322026-08-07_10-42-26PeriscopeTest_session3,E322026-08-07_10-42-26PeriscopeTest_session3_20261002_125755_job197,E32_PeriscopeTest_Session3,1 2 3 4,9,10,3,11,4,0
+E32_session4,E32,2026-08-08,thalamus,?,?,VGAT-ChR2,?,E322026-08-08_13-06-50PeriscopeTest_session4,E322026-08-08_13-06-50PeriscopeTest_session4_20261005_112956_job201,E32_PeriscopeTest_Session4,1 2 3,9,10,3,11,4,0

@@ -1,0 +1,10 @@
+# data and things the code makes
+*.nwb
+derived/
+figures/
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
+
+# the Doric SDK (large, from the vendor)
+rig/Doric_Stim/DoricSystemDLL/

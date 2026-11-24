@@ -1,0 +1,26 @@
+# The environment for everything in this folder.
+#
+#   conda env create -f environment.yml
+#   conda activate trn_stim
+#
+# Neuroline brings its own dependencies (SpikeInterface, PyNWB, neuroconv, Kilosort, Facemap, PyTorch).
+# For a GPU, install the PyTorch build for your card afterwards (see pytorch.org); only sorting and
+# face motion need it, building and reading NWB files does not.
+#
+# Not tested as a fresh install yet: the versions below are those of the environment the code was
+# written in. NeMoS and the NWB Inspector were not installed there.
+name: trn_stim
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - neuroline==1.1.0        # sorting, LFP, face motion, and the Neuroline parts of the NWB file
+      - pynapple>=0.11          # reading the NWB file as time series objects
+      - nemos                   # GLMs on pynapple objects
+      - nwbinspector            # the official check of an NWB file (used at the end of build_nwb.py)
+      - phy==2.1.0              # looking at sorted units by eye (opened by unit_quality.ipynb)
+      - jupyterlab
+      - ipykernel
+      - matplotlib
