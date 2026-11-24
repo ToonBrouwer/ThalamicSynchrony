@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(python -m pip install imageio-ffmpeg opencv-python)",
+      "Bash(python run_analysis.py)",
+      "Bash(python -c \"from imageio_ffmpeg import get_ffmpeg_exe; p=get_ffmpeg_exe\\(\\); print\\(p\\); import subprocess; print\\(subprocess.run\\([p,'-version'],capture_output=True,text=True\\).stdout.splitlines\\(\\)[0]\\)\")",
+      "Bash(rm -rf \"C:\\\\Users\\\\brouw\\\\Documents\\\\ThalamicSynchrony-main\\\\Doric_stim\\\\analysis_output\")",
+      "Bash(python -u run_analysis.py)",
+      "Bash(python -u run_analysis.py --session 2026-04-23_19-59-44)"
+    ]
+  }
+}
